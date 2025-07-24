@@ -26,26 +26,91 @@ MANIFEST
 venv/
 env/
 ENV/
+.venv/
+.env/
+.python-version
 
 # Streamlit
 .streamlit/
+.streamlit.config.toml
+
+# Session Data
+sessions/*
+!sessions/.gitkeep
+*.session
+*.json
+!config.json
 
 # Logs
 *.log
+logs/
+log/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+.classpath
 
 # OS
 .DS_Store
 Thumbs.db
+*.db
+desktop.ini
+$RECYCLE.BIN/
+.directory
 
 # Environment variables
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local 
+.env.development
+.env.test
+.env.production
+.env*.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/ 
